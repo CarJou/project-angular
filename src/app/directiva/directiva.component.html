@@ -1,0 +1,9 @@
+<button type="button" class="btn btn-primary my-3" (click)="setShow()">
+  {{ show == true ? "Hide" : "Show" }}
+</button>
+<div class="card">
+  <div class="card-header">List course</div>
+  <ul class="list-group" *ngIf="show == true">
+    <li class="list-group-item" *ngFor="let item of courseList">{{ item }}</li>
+  </ul>
+</div>
