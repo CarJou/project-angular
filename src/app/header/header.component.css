@@ -1,0 +1,23 @@
+nav {
+  background-color: #6e0dff !important;
+}
+.navbar-brand,
+.nav-link {
+  color: #fafafa !important;
+}
+.nav-link:hover {
+  color: #fafafaad !important;
+}
+.navbar-toggler-icon {
+  background-image: url(../../assets/icons/hambur.svg) !important;
+  background-repeat: no-repeat;
+}
+.navbar-toggler {
+  border-color: transparent !important;
+  color: transparent !important;
+}
+
+.navbar-toggler:focus {
+  border-color: transparent !important;
+  color: transparent !important;
+}

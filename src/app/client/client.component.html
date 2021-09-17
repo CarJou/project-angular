@@ -1,25 +1,23 @@
-<div class="mb-3">
-  <div class="card-body text-primary">
-    <div class="card-header">List clients</div>
-    <table class="table table-bordered table-striped">
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>Email</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let client of clients">
-          <td>{{ client.id }}</td>
-          <td>{{ client.name }}</td>
-          <td>{{ client.surname }}</td>
-          <td>{{ client.email }}</td>
-          <td>{{ client.createAt }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<div class="container-table rounded">
+  <h1 class="title-table">List clients</h1>
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th class="list-th">id</th>
+        <th class="list-th">Name</th>
+        <th class="list-th">Surname</th>
+        <th class="list-th">Email</th>
+        <th class="list-th">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients">
+        <td>{{ client.id }}</td>
+        <td>{{ client.name }}</td>
+        <td>{{ client.surname }}</td>
+        <td>{{ client.email }}</td>
+        <td>{{ client.createAt }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

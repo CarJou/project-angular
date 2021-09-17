@@ -1,0 +1,19 @@
+.container-table {
+  margin-top: 35px;
+  box-shadow: 0 4px 13px rgba(128, 128, 128, 0.493);
+}
+.title-table {
+  padding: 12px;
+
+  font-size: 1.2rem;
+  color: #303a44;
+  background-color: #ffff;
+  margin-left: 5px;
+}
+.list-th {
+  color: #8e939f;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  background-color: #fafafa;
+  text-align: center;
+}
