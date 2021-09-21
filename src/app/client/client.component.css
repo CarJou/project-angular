@@ -17,3 +17,7 @@
   background-color: #fafafa;
   text-align: center;
 }
+
+td.item-td {
+  text-align: center !important;
+}

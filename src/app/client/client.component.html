@@ -1,5 +1,14 @@
 <div class="container-table rounded">
   <h1 class="title-table">List clients</h1>
+  <div class="my-2 text-left">
+    <button
+      class="btn btn-rounded btn-primary"
+      type="button"
+      [routerLink]="['/clients/form']"
+    >
+      Create
+    </button>
+  </div>
   <table class="table table-borderless">
     <thead>
       <tr>
@@ -8,15 +17,37 @@
         <th class="list-th">Surname</th>
         <th class="list-th">Email</th>
         <th class="list-th">Date</th>
+        <th class="list-th">Edit</th>
+        <th class="list-th">Delete</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let client of clients">
-        <td>{{ client.id }}</td>
-        <td>{{ client.name }}</td>
-        <td>{{ client.surname }}</td>
-        <td>{{ client.email }}</td>
-        <td>{{ client.createAt }}</td>
+        <td class="item-td">{{ client.id }}</td>
+        <td class="item-td">{{ client.name }}</td>
+        <td class="item-td">{{ client.surname }}</td>
+        <td class="item-td">{{ client.email }}</td>
+        <td class="item-td">{{ client.createAt }}</td>
+        <td class="item-td">
+          <button
+            class="btn btn-success"
+            name="edit"
+            type="button"
+            [routerLink]="['/clients/form', client.id]"
+          >
+            Edit
+          </button>
+        </td>
+        <td class="item-td">
+          <button
+            class="btn btn-danger"
+            name="delete"
+            type="button"
+            (click)="delete(client)"
+          >
+            Delete
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>
